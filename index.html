@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Аксиоматическое построение классической логики — конспект</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.5; color: #222; }
+  h1 { font-size: 1.5rem; }
+  a.pdf { display: inline-block; padding: .6rem 1rem; border: 1px solid #888; border-radius: 6px; text-decoration: none; color: #222; }
+  a.pdf:hover { background: #f3f3f3; }
+  .meta { color: #666; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Аксиоматическое построение классической логики высказываний и предикатов</h1>
+<p>Конспект лекций. В. В. Долгоруков, НИУ ВШЭ.</p>
+<p><a class="pdf" href="logic-notes.pdf">Скачать PDF (свежая версия)</a></p>
+<p class="meta">Обновлено: <span id="date">см. дату файла</span>. Эта страница всегда ссылается на последнюю версию конспекта.</p>
+<script>
+fetch('logic-notes.pdf', {method: 'HEAD'}).then(r => {
+  const d = r.headers.get('last-modified');
+  if (d) document.getElementById('date').textContent = new Date(d).toLocaleDateString('ru-RU');
+}).catch(() => {});
+</script>
+</body>
+</html>
